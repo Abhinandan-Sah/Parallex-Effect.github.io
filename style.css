@@ -44,7 +44,7 @@
 
 .container h1{
     position: absolute;
-    top: 14rem;
+    top: 6rem;
     left: 50%;
     transform: translateX(-50%);
     letter-spacing: 4px;
