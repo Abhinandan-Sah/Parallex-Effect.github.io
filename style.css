@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height: 100vh;
+    overflow-x: hidden; 
+    overflow-y: auto; 
+    perspective: 10px;
+
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+
+ .background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 101%;
+    object-fit: cover;
+    z-index: -1;
+
+ }
+
+.background{
+    transform: translateZ(-40px) scale(5);
+    
+}
+
+.foreground{
+    transform: translateZ(-20px) scale(3);
+
+}
+
+.container h1{
+    position: absolute;
+    top: 14rem;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 4px;
+    color: aliceblue;
+    font-size: 10rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);
+
+} 
+
+section{
+    color: white;
+    background-color: black;
+    padding: 5rem 0;
+
+
+}
+
+.first-h2{
+    font-size: 5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 10rem;
+}
+
+.text{
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0 10rem;
+    margin: 5rem 0px;
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.bg1{
+    background-image: url(img/pexels-pixabay-71104.jpg);   
+}
+.bg2{
+    background-image: url(img/sport-3.jpg);
+}
+.bg3{
+    background-image: url(img/sport-2.jpg); 
+}
+
+.desc{
+    position: absolute;
+    font-size: 3.5rem;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-weight: 500px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
